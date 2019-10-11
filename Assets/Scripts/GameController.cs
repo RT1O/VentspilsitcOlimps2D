@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
@@ -29,6 +30,13 @@ public class GameController : MonoBehaviour
         InvokeRepeating("drop", 0f, repeatTime);
 
         Time.timeScale = 0;
+    }
+
+    private void Update() {
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
     }
 
     public void drop()

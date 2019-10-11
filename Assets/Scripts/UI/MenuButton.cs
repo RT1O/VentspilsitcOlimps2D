@@ -16,7 +16,7 @@ public class MenuButton : MonoBehaviour
     }
 
     public void Play() {
-        SceneManager.LoadScene("Test_Juris");
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void Exit() {
