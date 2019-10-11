@@ -1361,7 +1361,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61f31c639e3accc4fba85ef12f7aa213, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeOutTime: 5
+  fadeOutTime: 10
   fadeOutDuration: 0.5
 --- !u!1 &550672879
 GameObject:
@@ -1394,6 +1394,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   maxHealth: 100
+  diff: 0.3
   energy: 100
   maxEnergy: 100
   research: 0

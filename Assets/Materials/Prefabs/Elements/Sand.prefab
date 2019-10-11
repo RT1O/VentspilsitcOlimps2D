@@ -185,8 +185,7 @@ MonoBehaviour:
   healthGain: -1
   researchGain: 4
   buildingSprite: {fileID: 21300000, guid: d0bf53c337f335f4da61774ef54350a5, type: 3}
-  flavorText: I don't like sand. It's coarse and rough and irritating and it gets
-    everywhere.
+  flavorText: I don't like sand. It's coarse and rough and irritating...
   scienceText: Gasses released from sand smelting can cause cancer.
 --- !u!82 &-3994430924093386015
 AudioSource:

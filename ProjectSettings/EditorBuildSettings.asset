@@ -12,9 +12,15 @@ EditorBuildSettings:
     path: Assets/Scenes/LevelSelect.unity
     guid: 138b67a488dc370498c668b3c746a1b4
   - enabled: 1
-    path: Assets/Scenes/Game.unity
+    path: Assets/Scenes/Normal.unity
     guid: 05a1ba8d65bd3bd418ad4d69f9501657
   - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: c6ccdc18c82904e4a991ecb565f284e4
+  - enabled: 1
+    path: Assets/Scenes/Hard.unity
+    guid: 387435420ae80ae44b229b80a955a97c
+  - enabled: 1
+    path: Assets/Scenes/Easy.unity
+    guid: 86290a713245dcf41b3922206529a5bf
   m_configObjects: {}
