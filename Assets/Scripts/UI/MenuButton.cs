@@ -8,7 +8,6 @@ public class MenuButton : MonoBehaviour
     public string scene;
 
     public void ChangeScene() {
-        Debug.Log(scene);
         SceneManager.LoadScene(scene);
     }
 

@@ -16,14 +16,21 @@ public class Building : MonoBehaviour
     private GameController gameController;
     private Planet planet;
     int repeatTime = 1;
+    AudioSource audioSource;
 
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         gameController = GameObject.FindWithTag("Controller").GetComponent<GameController>();
 
         GetComponent<Image>().sprite = buildingSprite;
 
         InvokeRepeating("Generate", 0f, repeatTime);
+    }
+
+    public void Play()
+    {
+        audioSource.Play(0);
     }
 
     public void Generate()

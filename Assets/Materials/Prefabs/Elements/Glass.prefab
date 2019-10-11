@@ -184,7 +184,7 @@ MonoBehaviour:
   energyGain: -4
   healthGain: 2
   researchGain: 5
-  buildingSprite: {fileID: 21300000, guid: 24ab92585f4299a498d444449f3e21fb, type: 3}
+  buildingSprite: {fileID: 21300000, guid: 28352f52725b80a4f964924b37580e83, type: 3}
   flavorText: I can finally see again, thanks Glass.
   scienceText: Great for making medical equipment.
 --- !u!82 &4010759666234112633

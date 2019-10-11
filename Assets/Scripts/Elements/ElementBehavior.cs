@@ -87,7 +87,10 @@ public class ElementBehavior : MonoBehaviour, IDragHandler, IEndDragHandler, IBe
                 }
             }    
 
-            if (containsBuilding) return;
+            if (containsBuilding) {
+                GameObject.Find("Buildings").transform.GetChild(0).GetComponent<Building>().Play();
+                return;
+            }
             
             Element el = gameObject.GetComponent<Element>();
             GameObject.FindWithTag("Planet").GetComponent<Planet>().ReplaceBuilding(el.name, el.energyGain, el.healthGain, el.researchGain, el.buildingSprite, rep);

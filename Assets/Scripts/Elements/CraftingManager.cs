@@ -68,8 +68,7 @@ public class CraftingManager : MonoBehaviour {
 
     if (slot[0].childCount == 3 && 
         slot[1].childCount == 3 && 
-        result.childCount == 2 && 
-        gameController.energy >= energyCost) {
+        result.childCount == 2) {
       
       string element1 = slot[0].GetChild(2).GetComponent<Element>().name;
       string element2 = slot[1].GetChild(2).GetComponent<Element>().name;

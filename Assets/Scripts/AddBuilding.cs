@@ -5,6 +5,12 @@ using UnityEngine;
 public class AddBuilding : MonoBehaviour
 {
     Transform element;
+    AudioSource audioSource;
+
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.transform.tag == "Element")
@@ -48,6 +54,7 @@ public class AddBuilding : MonoBehaviour
         if (!containsBuilding) {
             element.GetComponent<ElementBehavior>().add = true;
         } else {
+            audioSource.Play(0);
             element.GetComponent<ElementBehavior>().add = false;
         }
     }

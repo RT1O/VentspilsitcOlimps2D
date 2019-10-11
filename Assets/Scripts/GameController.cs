@@ -35,7 +35,7 @@ public class GameController : MonoBehaviour
         Text energyGain = GameObject.Find("EnergyGain").GetComponent<Text>();
         // Text researchGain = GameObject.Find("ResearchGain").GetComponent<Text>();
 
-        health += (healthDrop / 3 - craftingManager.elementCount) / 8f;
+        health += (healthDrop / 3 - craftingManager.elementCount*0.5f) / 8f;
 
         if (research >= 100) {
             Time.timeScale = 0;
@@ -75,7 +75,7 @@ public class GameController : MonoBehaviour
             research = 100;
         }
 
-        float _hpGain = (float) System.Math.Round((healthDrop / 3 - craftingManager.elementCount / 8f), 1) ;
+        float _hpGain = (float) System.Math.Round(((healthDrop / 3 - craftingManager.elementCount*0.5f) / 8f), 1) ;
      
         healthGain.text = (_hpGain > 0 ? "+" : "") + _hpGain + "%";
         energyGain.text = (energyDrop > 0 ? "+" : "") + System.Math.Round(energyDrop/2f, 1);
